@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body{
+            margin: 0 auto;
+            max-width: 900px;
+            width: 90%;
+        }
+        .box{
+            float:right;
+            margin: 80px 20px 20px 20px;
+            /* margin: 20px; */
+            width: 150px;
+            border-radius: 20px;
+            background-color: rgb(228, 105, 17);
+            padding: 1em;
+        }
+        .special{
+            background-color: aqua;
+            padding: 15px;
+            color: blue;
+        }
+
+        /* clear property is used to give the element a normal flow as per our requirement */
+        .cleared{
+            clear: right; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Float Property</h1>
+    <img class="box" src="IMG_20211227_200450.jpg" width="200px" alt="This is a logo image">
+
+    <h2 class="special">Resume</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, iure cupiditate! Numquam fugiat iure et voluptatem minus quis incidunt velit deleniti, saepe dicta accusantium eveniet inventore non seid.</p>
+
+    <p class="cleared"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus facere praesentium itaque. Harum voluptatem voluptate officia ad reprehenderit sint, nulla quam voluptatum modi quae eaque. Nemo laudantium illo perferendis ratione.</p>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores modi animi perspiciatis nesciunt. Praesentium voluptatibus illum dicta vel, autem impedit, non adipisci itaque beatae sint ipsa ipsam quas consequuntur sequi!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quam id possimus dolor voluptatem pariatur nemo sapiente soluta quisquam porro unde culpa similique maxime exercitationem voluptates vero distinctio, voluptatibus et!</p>
+</body>
+</html>

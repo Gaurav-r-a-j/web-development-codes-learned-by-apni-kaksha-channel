@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body{
+            font-size: 20px;
+            padding: 0px 20px 30px 0px;
+            line-height: 1.4;
+        }
+        
+        #flex-item-1{
+            /* flex-grow: 2; it will increase 2x speed relative to normal items */
+            background-color: blue;
+            /* flex-basis: 200px; it is use to give the maximum width means if there is space then it will take this value otherwise normal */
+        }
+        #flex-item-2{
+            /* flex-grow: 3; we can give negative value in all these; */
+            background-color: aqua;
+        }
+        #flex-item-3{
+            /* flex-shrink: 2; to decrease an item relative to other item in provided speed */
+            background-color: rgb(255, 0, 0);
+            /* order: 5; it is use to give order or manipulate orders of items */
+        }
+        #flex-item-4{
+            /* flex:3 2 250px; This is a shortand property which take value as (hover on it to see) */
+            background-color: rgb(51, 255, 0);
+        }
+        #flex-item-5{
+            /* align-self: flex-end; this is same as align-content but we can use it on only one item respectively */
+            background-color: rgb(255, 0, 242);
+            order: 6;
+        }
+
+        .flex-item{
+            width: 75px;
+            height: 75px;
+            background-color: skyblue;
+            border: 2px solid darkblue;
+            text-align: center;
+            font-size: 2em;
+            color: white;
+            font-weight: bold ;
+            line-height: 1.4;
+        }
+
+
+        /* difference b/w align-item andd content is that align-item divides spaces also but content only apply on content */
+        .flex-container{
+            /* flex-flow:row wrap ; it is also a shorthand propery used on container only takes two values; */
+            display: flex;
+            width: 100%;
+            height: 500px;
+            border: 2px solid slateblue;
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap; */
+            
+            /* align-content: space-between; */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item" id="flex-item-1">1</div>
+        <div class="flex-item" id="flex-item-2">2</div>
+        <div class="flex-item" id="flex-item-3">3</div>
+        <div class="flex-item" id="flex-item-4">4</div>
+        <div class="flex-item" id="flex-item-5">5</div>
+</body>
+</html>

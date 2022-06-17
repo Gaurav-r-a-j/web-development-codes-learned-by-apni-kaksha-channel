@@ -1,0 +1,15 @@
+button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid yellow;
+    background-color: antiquewhite;
+    color: blue;
+    box-shadow: 1px 1px 2px greenyellow;
+    padding: 3px 10px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+
+}

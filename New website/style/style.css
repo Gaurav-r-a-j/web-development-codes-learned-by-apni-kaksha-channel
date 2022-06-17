@@ -1,0 +1,118 @@
+h3{
+    color: aqua;
+}
+
+
+
+/* styling navigation  */
+
+nav a{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 20px;
+    float:left;
+
+
+}
+nav{
+    background-color: red;
+    overflow: hidden;
+}
+
+/* nav a:visited{
+    color: white;
+} */
+
+
+
+
+
+
+
+p{
+    color: brown;
+}
+
+h1{
+    color: coral;
+}
+
+h2{
+    color: blanchedalmond;
+}
+a{
+    color: cyan;
+}
+
+li{
+    list-style-type: square;
+    color: blue;
+}
+
+.classselector{
+    color: darkcyan;
+    font-weight: bold;
+    font-size: large;
+}
+
+span.classselector{
+    color: darkmagenta;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* this is sudo class selector */
+a:hover{
+    color: firebrick;
+    text-align: center;
+}
+
+#heading{
+    color: forestgreen;
+    background-color: black;
+}
+
+p#one{
+    color: coral;
+}
+
+/* This is an attribute selector */
+li[class]{
+    color: crimson;
+    font-size: large;
+}
+
+/* this is will select a specific class */
+li[class="a"]{
+    color: darkkhaki;
+}
+
+/* this will select the element having same class */
+li[class~="a"]{
+    color: darkred;
+    background-color: deeppink;
+}
+
+
+
+/* everything selector or Universal selector */
+/* 
+*{
+    background-color: black;
+
+} */
+
+
+table,tr,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding:10px;
+    border-spacing: 5px;
+
+}
+th{
+    background-color: blueviolet;
+}
+td{
+    background-color: chartreuse;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-rows: 200px 100px 200px 50px; it will provide height as given and start from element 1 respectively ; */
+            /* grid-template-columns: 1fr 1fr 1fr;it will divide the elements as given fractions */
+            grid-template-columns: repeat(3,1fr);/* The following upper syntax can be replaced by using repeat with its 1st parameter no.of times ans 2nd parameter value */
+            grid-gap: 20px; 
+            grid-auto-rows: minmax(100px,auto);
+            grid-auto-columns: minmax(50px,auto);
+            /* column-gap: 120px;
+            row-gap: 120px; */
+            /* grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); this is the best thing to show responsiveness in this; */
+
+        }
+
+        .item{
+            background-color: aquamarine;
+            border: 3px solid green;
+            border-radius: 3px;
+
+        }
+
+        /* #item2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+
+        }
+        #item3,#item5{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        } */
+
+        #item3{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .dabba-3-nesting{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+
+        }
+
+        .nested-items{
+            border:3px solid rgb(255, 47, 47);
+            border-radius: 3px;
+            background-color: lightcoral;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--flexbox is one dimensional wher css grid is two dimensional-->
+    <div class="container">
+        <!-- grid size depend upon text isside it so to adjust this we use gridautorows  -->
+        <!-- <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam veritatis sit, voluptates quo assumenda repellat aliquid, quidem totam provident adipisci quod voluptas temporibus voluptatem molestias ipsam illo atque aut optio!</div> -->
+        <div class="item" id="item2">Dabba 2</div>
+        <div class="item dabba-3-nesting" id="item3">
+            <div class="nested-items">Dabbe me dabba 1</div>
+            <div class="nested-items">Dabbe me dabba 2</div>
+            <div class="nested-items">Dabbe me dabba 3</div>
+        </div>
+        <div class="item">Dabba 4</div>
+        <div class="item" id="item5">Dabba 5</div>
+    </div>
+    
+</body>
+</html>

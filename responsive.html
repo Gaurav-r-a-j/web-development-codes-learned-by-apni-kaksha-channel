@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @media screen and (max-width: 600px) {
+            body{
+                color: red;
+            }
+            
+        }
+
+    @media(orientation: landscape){
+        body{
+            color: rebeccapurple;
+        }
+    }
+
+    /* we can combine media queries
+     */
+    
+    /* we can use "and" and "comma" for setting different conditions  */
+
+    @media screen and (max-width:300px) and (orientation: landscape) {
+       body{
+           color: palegreen;
+       } 
+        
+    }
+
+    /* not operator */
+
+    @media not all and (orientation:landscape) {
+        body{
+            color: rgb(55, 0, 255);
+        }
+        
+    }
+
+
+    </style>
+</head>
+<body>
+    <div>Media</div>
+    <h1>Media Queries using here</h1>
+    <p>;Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nostrum, assumenda exercitationem reprehenderit voluptatibus consequuntur fuga. Iure natus praesentium vitae quis blanditiis dicta nisi. Recusandae tenetur voluptatem velit? Aliquid, obcaecati!</p>
+    <h2>This is the model </h2>
+</body>
+</html>
